@@ -193,5 +193,20 @@ p {
   );
 }
 
-@media screen {
+@media screen and (max-width: 650px) {
+  body {
+    align-items: flex-start;
+    background-color: white;
+  }
+  .container {
+    box-shadow: none;
+    flex-direction: column;
+  }
+  .result {
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+  }
+  .summary {
+    width: 100%;
+  }
 }
