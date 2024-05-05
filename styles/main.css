@@ -1,8 +1,8 @@
 :root {
-  --Light-red: hsl(0, 100%, 67%);
-  --Orangey-yellow: hsl(39, 100%, 56%);
-  --Green-teal: hsl(166, 100%, 37%);
-  --Cobalt-blue: hsl(234, 85%, 45%);
+  --Light-red: hsla(0, 100%, 67%, 0.1);
+  --Orangey-yellow: hsla(39, 100%, 56%, 0.1);
+  --Green-teal: hsla(166, 100%, 37%, 0.1);
+  --Cobalt-blue: hsla(234, 85%, 45%, 0.1);
 
   /* Gradients */
   --Light-slate-blue: hsl(252, 100%, 67%);
@@ -43,7 +43,6 @@ p {
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   border-radius: 2rem;
   background-color: var(--White);
-  /* padding: 2rem; */
 }
 
 /*Result Card */
@@ -107,7 +106,92 @@ p {
   width: 220px;
   font-size: 16px;
   color: var(--Light-lavender);
+  margin-bottom: 0.3rem;
 }
 
 .summary {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.summary .summary-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--Dark-gray-blue);
+  margin-bottom: 1rem;
+}
+
+.summary .item-grp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 0.6rem;
+}
+
+.item-grp p {
+  font-size: 16px;
+  font-weight: 800;
+  color: hsla(224, 30%, 27%, 0.4);
+}
+
+.item {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.1rem 0;
+}
+
+.item span {
+  font-weight: 600;
+}
+
+.red {
+  background-color: var(--Light-red);
+  color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+  background-color: var(--Orangey-yellow);
+  color: hsl(39, 100%, 56%);
+}
+
+.green {
+  background-color: var(--Green-teal);
+  color: hsl(166, 100%, 37%);
+}
+
+.blue {
+  background-color: var(--Cobalt-blue);
+  color: hsl(234, 85%, 45%);
+}
+
+#no {
+  font-size: 16px;
+  color: black;
+}
+
+#continue {
+  margin-top: auto;
+  padding: 0.9rem;
+  background-color: var(--Dark-gray-blue);
+  color: var(--White);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 15rem;
+  cursor: pointer;
+}
+
+#continue:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+}
+
+@media screen {
 }
