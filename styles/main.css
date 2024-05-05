@@ -1,13 +1,113 @@
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  /*Circle*/
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /*Background*/
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Pale-blue);
+}
+p {
+  font-size: 18px;
 }
 
 .container {
   display: flex;
-  width: 740px;
+  justify-content: space-between;
+  width: 650px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  border-radius: 2rem;
+  background-color: var(--White);
+  /* padding: 2rem; */
+}
+
+/*Result Card */
+.result {
+  width: 50%;
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+  padding: 2rem;
+  border-radius: 2rem;
+  color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--Light-lavender);
+  margin-bottom: 1rem;
+}
+
+.result .circle {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    var(--Violet-blue),
+    var(--Persian-blue)
+  );
+}
+
+.result .circle h1 {
+  font-size: 60px;
+  color: var(--White);
+}
+
+.result .circle p {
+  color: var(--Light-lavender);
+  font-size: 14px;
+}
+
+.result .great {
+  color: var(--White);
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.result p:last-child {
+  text-align: center;
+  width: 220px;
+  font-size: 16px;
+  color: var(--Light-lavender);
+}
+
+.summary {
 }

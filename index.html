@@ -12,6 +12,12 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Results summary component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,8 +35,11 @@
     <div class="container">
       <div class="result">
         <p class="title">Your Result</p>
-        <p class="circle"><span>76</span> of 100</p>
-        <p>Great</p>
+        <div class="circle">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <p class="great">Great</p>
         <p>
           You scored higher than 65% of the people who have taken these tests.
         </p>
