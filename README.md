@@ -1,7 +1,6 @@
 # Frontend Mentor - Results summary component
 
-## Please find the link for the live site:
-https://vishwasmj-results-summary-component.netlify.app/
+## Please find the link for the live site: <a href="https://vishwasmj-results-summary-component.netlify.app/" target="_blank">Results summary component</a>
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
