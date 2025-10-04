@@ -1,3 +1,7 @@
+## Link for the live website:
+
+https://vishwasmj-results-summary-component.netlify.app/
+
 # Frontend Mentor - Results summary component
 
 ## Please find the link for the live site: <a href="https://vishwasmj-results-summary-component.netlify.app/" target="_blank">Results summary component</a>
